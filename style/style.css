@@ -1,11 +1,43 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 header {
   height: 100vh;
   background-image: url("../img/images/hero.jpeg");
-  /* flex-box thing */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-size: cover;
+  justify-content: center;
   margin-bottom: 30px;
+}
+
+#down {
+  position: absolute;
+  top: 85vh;
+  size: 40px;
+  padding: 20px;
+  font-size: 2.5em;
+}
+
+#down:hover {
+  cursor: pointer;
+  background-color: #eee;
+  opacity: 0.8;
+}
+
+.btn {
+  border: 1px solid white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #eee;
+  opacity: 0.8;
+}
+
+.heroDetails {
+  background-color: white;
 }
