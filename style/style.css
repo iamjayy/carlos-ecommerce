@@ -1,43 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
 * {
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: white;
+  min-height: 200vh;
 }
 
 header {
-  height: 100vh;
-  background-image: url("../img/images/hero.jpeg");
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  background-size: cover;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 100000;
+}
+
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+header ul {
+  position: relative;
+  display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  align-items: center;
 }
 
-#down {
-  position: absolute;
-  top: 85vh;
-  size: 40px;
-  padding: 20px;
-  font-size: 2.5em;
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header.sticky {
+  padding: 5px 100px;
+  background: black;
+}
+header.sticky .logo,
+header.sticky ul li a {
+  color: white;
 }
 
-#down:hover {
-  cursor: pointer;
-  background-color: #eee;
-  opacity: 0.8;
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
 }
 
-.btn {
-  border: 1px solid white;
-}
-
-.btn:hover {
-  cursor: pointer;
-  background-color: #eee;
-  opacity: 0.8;
-}
-
-.heroDetails {
-  background-color: white;
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/images/hero.jpeg");
+  background-size: cover;
 }
