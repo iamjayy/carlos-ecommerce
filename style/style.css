@@ -1,8 +1,15 @@
-body {
-  background: #262626;
-  color: white;
+a {
+  text-decoration: none;
+  color: inherit;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 5px;
+}
 /*HERO*/
 header {
   height: 100vh;
@@ -13,6 +20,12 @@ header {
   align-items: center;
   justify-content: center;
   background-size: cover;
+  /* parallax scrolling */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 88888;
 }
 .hero-caption {
   color: white;
@@ -59,3 +72,103 @@ header {
   color: #fff;
 }
 /*NAVBAR END*/
+
+/*COMMUNITY START*/
+.page-wrapper a:hover {
+  color: teal;
+}
+
+.post-slider {
+  position: relative;
+}
+
+.post-slider .slider-title {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.post-slider .next {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  font-size: 2rem;
+  color: teal;
+  cursor: pointer;
+}
+.post-slider .prev {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  font-size: 2rem;
+  color: teal;
+  cursor: pointer;
+}
+
+.post-slider .post-wrapper {
+  width: 84%;
+  height: 350px;
+  padding: 10px 0px 10px 0px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.post-slider .post-wrapper .post {
+  display: inline-block;
+  width: 300px;
+  height: 330px;
+  margin: 0 10px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 1rem 1rem 1rem -1rem #a0a0a0;
+}
+
+.post-slider .post-wrapper .post .post-info {
+  height: 130px;
+  padding: 0px 5px;
+}
+.post-slider .post-wrapper .post .slider-image {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/*COMMUNITY END*/
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-link:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}

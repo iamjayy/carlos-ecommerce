@@ -14,6 +14,7 @@
       crossorigin="anonymous"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/b0e04601d9.js"></script>
     <link rel="stylesheet" href="./style/style.css" />
     <title>Document</title>
   </head>
@@ -22,21 +23,13 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">Logo</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <a class="navbar-brand logo" href="#">Logo</a>
+          <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+          </span>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto main-nav" id="js-menu">
               <li class="nav-item active">
                 <a class="nav-link" href="#">Home</a>
               </li>
@@ -95,6 +88,102 @@
       </div>
     </div>
     <!--PRODUCTS START-->
+
+    <!--COMMUNITY START-->
+
+    <!--Page Wrapper-->
+    <div class="page-wrapper">
+      <!--Post Slider-->
+      <div class="post-slider">
+        <h1 class="slider-title">Trending Posts</h1>
+        <i class="fa fa-angle-double-left prev"></i>
+        <i class="fa fa-angle-double-right next"></i>
+
+        <div class="post-wrapper">
+          <div class="post">
+            <img src="img/images/hero.jpeg" class="slider-image" />
+            <div class="post-info">
+              <h4><a href="#">lorum ipsom</a></h4>
+              <i class="fa fa-user">lorum ipsum</i>
+              &nbsp;
+              <i class="far fa-calender">July 3rd, 2020</i>
+            </div>
+          </div>
+
+          <div class="post">
+            <img src="img/images/city.jpeg" class="slider-image" />
+            <div class="post-info">
+              <h4><a href="#">lorum ipsom</a></h4>
+              <i class="fa fa-user">lorum ipsum</i>
+              &nbsp;
+              <i class="far fa-calender">July 3rd, 2020</i>
+            </div>
+          </div>
+
+          <div class="post">
+            <img src="img/images/hero.jpeg" class="slider-image" />
+            <div class="post-info">
+              <h4><a href="#">lorum ipsom</a></h4>
+              <i class="fa fa-user">lorum ipsum</i>
+              &nbsp;
+              <i class="far fa-calender">July 3rd, 2020</i>
+            </div>
+          </div>
+
+          <div class="post">
+            <img src="img/images/city.jpeg" class="slider-image" />
+            <div class="post-info">
+              <h4><a href="#">lorum ipsom</a></h4>
+              <i class="fa fa-user">lorum ipsum</i>
+              &nbsp;
+              <i class="far fa-calender">July 3rd, 2020</i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Post Slider-->
+    </div>
+    <!--COMMUNITY END-->
+
+    <!--FOOTER START-->
+    <div class="container-fluid footer">
+      <div class="row">
+        <div class="col text-center">
+          <h1>footer</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </div>
+        <div class="col-md-6">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </div>
+      </div>
+    </div>
+    <!--FOOTER START-->
+
+    <!--Slick Carousel-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
     <script src="app.js"></script>
   </body>
